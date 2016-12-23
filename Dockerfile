@@ -11,9 +11,11 @@ RUN apk -U add \
         py-imaging \
         ca-certificates \
         py-pip \
+        py-mysqldb \
+        openssh-client\
 
     && rm -rf /var/cache/apk/* \
-    && pip install Scrapy SQLAlchemy scrapy-redis
+    && pip install Scrapy scrapy-redis awesome-slugify
 
 WORKDIR /runtime/app
 
