@@ -13,6 +13,7 @@ RUN apk -U add \
         py-pip \
         py-mysqldb \
         openssh-client\
+        curl\
 
     && rm -rf /var/cache/apk/* \
     && pip install Scrapy scrapy-redis awesome-slugify
