@@ -12,7 +12,7 @@ RUN apk -U add \
         py-pip \
 
     && rm -rf /var/cache/apk/* \
-    && pip install Scrapy SQLAlchemy scrapy-redis
+    && pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org Scrapy SQLAlchemy scrapy-redis
 
 WORKDIR /runtime/app
 
