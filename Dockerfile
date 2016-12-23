@@ -10,8 +10,9 @@ RUN apk -U add \
         python-dev \
         py-imaging \
         py-pip \
+
     && rm -rf /var/cache/apk/* \
-    && pip install Scrapy
+    && pip install Scrapy SQLAlchemy scrapy-redis
 
 WORKDIR /runtime/app
 
