@@ -9,10 +9,11 @@ RUN apk -U add \
         openssl-dev \
         python-dev \
         py-imaging \
+        ca-certificates \
         py-pip \
 
     && rm -rf /var/cache/apk/* \
-    && pip install --index-url=http://pypi.python.org/simple/ --trusted-host pypi.python.org Scrapy SQLAlchemy scrapy-redis
+    && pip install Scrapy SQLAlchemy scrapy-redis
 
 WORKDIR /runtime/app
 
