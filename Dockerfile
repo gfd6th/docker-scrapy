@@ -16,7 +16,7 @@ RUN apk -U add \
         curl\
 
     && rm -rf /var/cache/apk/* \
-    && pip install Scrapy scrapy-redis awesome-slugify
+    && pip install Scrapy scrapy-redis awesome-slugify  requests-toolbelt rsa pyasn1 requests
 
 WORKDIR /runtime/app
 
