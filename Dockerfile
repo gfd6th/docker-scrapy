@@ -14,7 +14,7 @@ RUN apk -U add \
         py-mysqldb \
         openssh-client\
         curl\
-        screen\
+        tmux \
 
     && rm -rf /var/cache/apk/* \
     && pip install Scrapy scrapy-redis awesome-slugify  requests-toolbelt rsa pyasn1 requests
