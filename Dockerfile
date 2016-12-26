@@ -20,7 +20,3 @@ RUN apk -U add \
     && pip install Scrapy scrapy-redis awesome-slugify  requests-toolbelt rsa pyasn1 requests
 
 WORKDIR /runtime/app
-
-COPY entrypoint.sh /runtime/entrypoint.sh
-ENTRYPOINT ["/runtime/entrypoint.sh"]
-CMD ["scrapy"]
